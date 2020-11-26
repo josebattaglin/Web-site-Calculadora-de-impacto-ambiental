@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+
+	<title>Impacto do consumo de carne e derivados no meio ambiente</title>
+
+  <link rel="icon" href="./img/favicon.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+ <header>
+   <div class="container" id="nav-container">
+     <nav class="navbar navbar-expand-lg fixed-top">
+       <a href="#" class="navbar-brand">
+         <img id="logo" src="img/logo.png" alt="C.I.A">
+       </a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation" id="buttonresp">
+         <span class="fas fa-bars"></span>
+       </button>
+       <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+         <div class="navbar-nav">
+           <a class="nav-item nav-link" href="#" id="home-menu">Página inicial</a>
+            <a class="nav-item nav-link" href="#sobre" id="sobre-menu">Sobre nós</a>
+           <a class="nav-item nav-link" href="#calculadora" id="estatisticas-menu">Calculadora</a>
+           <a class="nav-item nav-link" href="#estatistica" id="diferenca-menu">Estatísticas</a>
+         </div>
+       </div>
+     </nav>
+   </div>
+ </header>
+  <h1 class="display-4 title" id="home">PÁGINA INICIAL</h1>
+  <main>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/img111.jpg" alt="Primeiro Slide" >
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img222.jpg" alt="Segundo Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img333.jpg" alt="Terceiro Slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </a>
+</div>
+
+<div class="link" id="sobre"></div>
+<div id="about-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="display-4 title">Sobre nós</h1>
+      </div>
+      <div class="col-md-6">
+        <img class="img-fluid"src="img/mao.png">
+      </div>
+      <div class="col-md-6" id="sobre2">
+        
+        O nosso compromisso é apenas trazer a conscientização, mostrando na prática o impacto que nossa alimentação descontrolada a base de carne e derivados alimenta uma indústria que prejudica nossa natureza. Comer carne não é necessariamente algo errado, nós seres humanos só estamos aqui hoje porque nos alimentamos desse tipo de comida, porém, a partir do momento em que começamos a nos modernizar, se estabilizar e, portanto crescemos a nossa população exponencialmente como também o consumo da carne, levando então ao aumento de demanda e consequentemente arranjamos um jeito de automatizar, deixar mais rápido e crescer o número de animais para o abate, para aumentar a oferta. Só que isso trouxe consequências enormes ao meio ambiente, e esse é o intuito desse site, mostrar o impacto desse grande problema que temos que resolver o quanto antes.
+      </div>
+    </div>
+  </div>
+</div>
+<div id="about-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" id="sobre3">
+        E para demonstrar o efeito que nós exercemos sobre a natureza, fizemos uma espécie de calculadora para mostrar de forma ilustrativa esse impacto, onde te mostrará o quanto você salvou e deixou de impactar o nosso meio-ambiente.
+      </div>
+      <div class="col-md-6" id="sobre2">
+        <img class="img-fluid"src="img/fotosite.png" width="325px" height="325px" id="imglogo">
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+<div class="link" id="calculadora"></div>
+<div id="about-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="display-4 title">Calculadora</h1>
+      </div>
+      <div class="col-md-6">
+        <div id="box" class="col-md-10 calc_box" style="padding-left: 0; padding-right: 0;">
+          <div class="items-align">
+            <div class="header-calc">
+            <h4>Há quanto tempo você está sendo vegano?</h4>
+            </div>
+            <div id="divs" class="col-9">
+              <form>
+                <i class="fas fa-calendar" style="color: green;"></i>  
+                <p>
+                <input type="number" class="date" id="dia" placeholder="Digite a quantidade de dias" min="0" max="31">
+                <input type="number" class="date" id="mes" placeholder="Digite a quantidade de meses" min="0" max="12">
+                <input type="number" class="date" id="ano"placeholder="Digite a quantidade de anos" min="0"></p>
+                <p><input type="submit" id="calcu" onclick="calcul()" value="Enviar"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" id="calc">
+        <div class="col-13">
+          <div class="col-md-10 calc_box" id="box1"> 
+            <div class="itens">
+              <p id="agua"><img class="icons" src="./img/agua.png" alt="Gota de água"> Litros de água: <span class="counter" id="resp1"></span></p>
+              <p id="graos"><img src="./img/trigo.png" alt="Grãos" class="icons"> Kg de grãos: <span class="counter" id="resp2"></span></p>
+              <p id="gases"><img src="./img/co2.png" alt="Nuvem de CO2" class="icons"> Kg de gases: <span class="counter" id="resp3"></span></p>
+              <p id="floresta"><img src="./img/floresta.png" alt="Arvores" class="icons"> M² de florestas: <span class="counter" id="resp4"></span></p>
+            </div>
+          </div>
+         <p></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="link" id="estatistica"></div>
+<div id="about-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="display-4 title">Estatísticas</h1>
+      </div>
+      <div class="statistic">
+        <ul class="statistic-item">
+          <h2><img src="./img/agua.png" alt="Gota de água" class="icons"> Água</h2>
+          <li>
+            <p id="lul1">A pecuária é o setor que mais utiliza água potável no mundo.
+              <br><a href="https://svb.org.br/vegetarianismo1/meio-ambiente">Link sobre este dado</a>
+              <br> Um dia sendo vegano você deixa de desperdiçar 3400 litros de água
+              <br><a href="https://svb.org.br/vegetarianismo1/meio-ambiente">Link para SVB "Sociedade Vegana Brasileira" onde foi retidado os dados</a></p>
+
+          </li>
+        </ul>
+
+        <ul class="statistic-item">
+          <h2><img src="./img/trigo.png" alt="Gota de água" class="icons"> Grãos</h2>
+          <li >
+            <p id="lul">
+              <br>Um dia sendo vegano, você não desperdiça 7 kg de grãos.
+              <br><a href="https://svb.org.br/vegetarianismo1/meio-ambiente">Link para SVB "Sociedade Vegana Brasileira" onde foi retidado os dados</a></p>
+          </li>
+        </ul>
+        
+        <ul class="statistic-item">
+          <h2><img src="./img/co2.png" alt="Gota de água" class="icons"> Gases</h2>
+          <li>
+            <p id="lul2">O setor agropecuário brasileiro contribuiu diretamente com cerca de 30% das emissões de gases que causam efeito estufa do Brasil
+              <br> <a href="https://www.svb.org.br/livros/comendo_o_planeta.pdf">Link para o livro "Comendo o Planeta"</a> 
+              <br> Um dia sendo vegano, você deixa de emitir 14 kg de gases causadores de efeito estufa na atmosfera
+              <br><a href="https://svb.org.br/vegetarianismo1/meio-ambiente">Link para SVB "Sociedade Vegana Brasileira" onde foi retidado os dados</a></p>
+          </li>
+        </ul>
+        
+        <ul class="statistic-item">
+          <h2><img src="./img/floresta.png" alt="Gota de água" class="icons"> Florestas</h2>
+          <li>
+            <p id="lul">Pecuária é responsável por cerca 80% do desmatamento da Floresta Amazônica.
+              <br> <a href="https://amazonia.org.br/2016/09/pecuaria-e-responsavel-por-mais-de-80-do-desmatamento-no-brasil/">Link sobre desmatamento na Amazônia</a>
+              <br> Um dia sendo vegano, você deixa de desmatar 24m² de Florestas
+              <br><a href="https://svb.org.br/vegetarianismo1/meio-ambiente">Link para SVB "Sociedade Vegana Brasileira" onde foi retidado os dados</a></p>
+          </li>
+        </ul>
+
+      </div>      
+    </div>
+  </div>
+</div>
+</main>
+</body>
+
+<script src="./js/main.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/57b0910810.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+
+</html>

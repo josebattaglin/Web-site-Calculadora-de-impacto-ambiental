@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: #f2f2f2;
+  }
+  .row{
+    margin: 0;
+  }
+  .container{
+    padding: 40px 0;
+  }
+  p, li{
+    color:#444;
+    font-size: 14px;
+  }
+  /*header*/
+  header, .navbar {
+    background-color: green;
+  }
+
+  .calc_box{
+    height:400px;
+    width:500px;
+    border:solid green 0.001vw;
+    border-radius: 4px;
+
+    background-color: #e8fbe8;
+
+
+    -webkit-box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.32); 
+    box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.32);
+  }
+
+  .items-align{
+    display: inline;
+    width: 100%;
+    
+    padding-top: 10px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+
+    vertical-align: middle;
+  }
+
+  .items-align form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .items-align h4{
+    text-align: center;
+
+    color: white;
+  }
+
+  .items-align i{
+    position: relative;
+    margin: 20px auto 0 auto;
+    font-size: 42px;
+  }
+
+  .items-align  p{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+    margin: 5px auto;
+    width: 160px; 
+  }
+
+  .items-align p .date{
+    position: relative;
+    border: solid 1px #1aff1a;
+    border-radius: 5px ;
+    width: 210px;
+    margin-top: 10px;
+ 
+ 
+    text-decoration: none;
+    padding-left: 5px;
+    background-color: #D3D3D3;
+    outline: none;
+  }
+
+  .items-align p .date:focus{
+    background-color: #fff;
+  }
+
+  .items-align p #calcu{
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 35px;
+
+    border: none;
+    background-color: green;
+    color: #fff;
+
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .items-align p #calcu:hover{
+    background-color: #fff;
+    color: green;
+    border: solid 1px green;
+  }
+
+  .items-align .header-calc{
+    width: 100%;
+    height: 60px;
+
+    background: url("../img/green_leaf.jpg");
+  }
+
+  .icons{
+      width: 36px;
+  }
+
+  .itens{
+    position: relative;
+    display: flex;
+    align-items: justify;
+    flex-direction: column;
+
+    margin: 10%;
+  }
+
+  .itens p{
+    width: 292px;
+    border-radius: 32px;
+    padding-left: 6px;
+    margin-bottom: 36px;
+
+    background-color: #B3FFB3;
+  }
+
+  .statistic-item{
+    width: 1125px;
+    height: 50px;
+    margin: 120px 15px;
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    background-color:  #1aff1a;
+    opacity: 80%;
+    
+  }
+
+  .statistic .statistic-item:hover{
+    border-radius: 12px 12px 0 0;
+  }
+
+  .statistic ul li{
+    display: none;
+    text-align: center;
+
+    width: 1125px;
+    height: 100px;
+    border-radius: 0 0 12px 12px;
+    background-color: #B3FFB3;
+
+  }
+
+  .statistic p{
+    color: #000;
+  }
+
+  .statistic ul:hover li{
+    display: block;
+  } 
+
+  #nav-container{
+    padding-top: 0;
+    padding-bottom:0;
+  }
+  #logo{
+    width: 98px;
+  }
+  .navbar-brand{
+    padding: 0;
+    color: white;
+  }
+  .navbar-brand:hover{
+    color:white;
+  }
+  #navbar-links a{
+    color: white;
+    font-family: 'Martel', serif;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link{
+  padding:1rem .8rem;
+  }
+  #home{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 130px;
+  }
+  #estatisticas{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  h1{
+    font-family: 'Martel', serif;
+
+  }
+  #buttonresp{
+    background-color: #dcdcdc;
+  }
+  .title{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  #sobre2{
+   font-size: 20px;
+   text-align: justify;
+  }
+      #sobre3{
+   font-size: 20px;
+   text-align: justify;
+  }
+  #agua{
+    font-size: 20px;
+  }
+  #graos{
+    font-size: 20px;
+  }
+  #gases{
+    font-size: 20px;
+  }
+  #floresta{
+    font-size: 20px;
+  }
+  #vidas{
+    font-size: 20px;
+  }
+
+  .link{
+    position: relative;
+    z-index: -10;
+    top: -80px;
+  }
+ @media (min-width: 319px){/*telemovel*/
+    #box, #box1{
+      width: 315px;
+      margin-bottom: 30px;
+    }
+    .itens{
+      margin: 5% 10%;
+    }
+    .itens p{
+      text-align: center;
+      width: 190px;
+    }
+    .statistic-item{
+      width: 315px;
+      margin: 50px 15px 170px 15px;
+    }
+
+    .statistic ul li{
+      width: 315px;
+      height: 155px;
+    }
+  }
+  @media (min-width: 330px){/*telemovel*/
+    #box, #box1{
+      width: 350px;
+      margin-bottom: 30px;
+    }
+
+    .statistic-item{
+      width: 320px;
+      margin: 50px 15px 170px 15px;
+    }
+
+    .statistic ul li{
+      width: 320px;
+      height: 155px;
+    }
+  }
+  @media (min-width: 400px){/*telemovel*/
+    #box, #box1{
+      width: 380px;
+      margin-bottom: 30px;
+    }
+
+    .statistic-item{
+      width: 380px;
+      margin: 50px 15px 170px 15px;
+    }
+
+    .statistic ul li{
+      width: 380px;
+      height: 155px;
+    }
+  }
+
+  @media (min-width: 539px){/*telemovel*/
+    #box, #box1{
+      width: 400px;
+      margin-bottom: 30px;
+    }
+
+    .statistic-item{
+      width: 500px;
+      margin: 180px 15px;
+    }
+
+    .statistic ul li{
+      width: 500px;
+      height: 140px;
+    }
+  }
+  @media (min-width: 768px){/*telemovel*/
+    #box, #box1{
+      width: 700px;
+    }
+
+    .itens p{
+      text-align: center;
+      width: 200px;
+    }
+
+    .statistic-item{
+      width: 720px;
+      margin: 180px 15px;
+    }
+
+    .statistic ul li{
+      width: 720px;
+      height: 160px;
+    }
+
+  }
+  @media (min-width: 992px){/*tablet*/
+    #box, #box1{
+      width: 1400px;
+    }
+
+    .itens p{
+      width: 292px;
+    }
+    .statistic-item{
+      width: 950px;
+      margin: 170px 15px;
+    }
+
+    .statistic ul li{
+      width: 950px;
+      height: 150px;
+    }
+  }
+  @media (min-width: 1200px){/*pc*/
+    #box, #box1{
+      width: 500px;;
+    }
+
+    .itens p{
+      width: 292px;
+    }
+
+    .statistic-item{
+      width: 1125px;
+      margin: 160px 15px;
+    }
+
+    .statistic ul li{
+      width: 1125px;
+      height: 140px;
+    }
+  }
+  #lul{
+    font-family: 'Anton', sans-serif;
+    font-size: 19px;
+  }
+  #lul1{
+    font-size: 19px;
+    font-family: 'Anton', sans-serif;
+  }
+  #lul2{
+    font-size: 18px;
+    font-family: 'Anton', sans-serif;
+  }
